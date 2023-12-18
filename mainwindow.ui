@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #f0f0f0; 
+}
+
+QLabel {
+    color: #333333;
+    font-size: 16px; 
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: white; 
+    font-size: 16px; 
+    border: 2px solid #4CAF50; 
+    border-radius: 15px; 
+    padding: 5px 10px; 
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #34963a; 
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QLabel{color: black}
+QPushButton{color: black}</string>
+   </property>
+   <widget class="QPushButton" name="OXRight">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>76</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OXLeft">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>76</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RotationLabel">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>9</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вращать вокруг:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OX">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>42</y>
+      <width>25</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OX:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OYRight">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>151</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OYLeft">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>151</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OY">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>118</y>
+      <width>24</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OY:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OZRight">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>227</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OZ">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>193</y>
+      <width>25</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OZ:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OZLeft">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>227</y>
+      <width>35</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ScaleButton">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>269</y>
+      <width>163</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Масштабирование</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TranslateButton">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>311</y>
+      <width>88</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Перенос</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RevertButton">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>512</y>
+      <width>223</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отменить преобразования</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TransformationMatrixLabel">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>479</y>
+      <width>269</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Конечная матрица преобразования:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TransformationMatrix">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>512</y>
+      <width>66</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ProjectionOXY">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>353</y>
+      <width>196</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Фронтальная проекция</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ProjectionOXZ">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>395</y>
+      <width>218</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Горизонтальная проекция</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ProjectionOYZ">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>437</y>
+      <width>192</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Профильная проекция</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RevertProjection">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>416</y>
+      <width>218</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отменить проецирование</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
